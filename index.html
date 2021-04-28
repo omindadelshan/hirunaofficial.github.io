@@ -11,7 +11,6 @@
 	<meta name="keywords" content="hiruna, GD Hiruna, HIRUNA, gd hiruna, hirunaofficial">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,600i,700" rel="stylesheet">
 
@@ -99,7 +98,38 @@
         </div>
     </div>
 </section>
+<script> 
+document.addEventListener('contextmenu', event=> event.preventDefault()); 
+document.onkeydown = function(e) { 
+if(event.keyCode == 123) { 
+return false; 
+} 
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){ 
+return false; 
+} 
+if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){ 
+return false; 
+} 
+if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){ 
+return false; 
+} 
+} 
+</script>
 
+<script type="text/JavaScript">
+//hirunaofficial.github.io
+function killCopy(e){
+return false
+}
+function reEnable(){
+return true
+}
+document.onselectstart=new Function ("return false")
+if (window.sidebar){
+document.onmousedown=killCopy
+document.onclick=reEnable
+}
+</script>
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/styleswitcher.js"></script>
 <script src="js/preloader.min.js"></script>
